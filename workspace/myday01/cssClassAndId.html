@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>클래스 선택자와 아디 선택자</title>
+    <style>
+        .blue {
+            color: blue;
+        }
+        .red {
+            color: red;
+        }
+
+        #red {
+            color: red;
+        }
+
+        #blue {
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 클래스가 2개이상일 때 style쪽에 순서에 따라 적용된다. -->
+    <p class="blue red">banana</p>
+    <!-- 아이디를 여러 개 작성하면 오류가 발생한다. -->
+    <p id="red blue">apple</p>
+    <p class="red" id="blue">peach</p>
+</body>
+</html>

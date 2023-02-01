@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display-table 실습</title>
+    <style>
+        #table1 {
+            display: table;
+            width: 70%;
+            margin: 0 auto;
+            /* border-spacing: ; */
+        }
+        #table2 {
+            display: table;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .row{
+            display: table-row;
+        }
+        .col{
+            display: table-cell;
+        }
+        div img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- 9개의 이미지를 3행 3열로 출력 -->
+    <div id="table1">
+        <div class="row">
+            <div class="col"><img src="img1.jpg"></div>
+            <div class="col"><img src="img2.jpg"></div>
+            <div class="col"><img src="img3.jpg"></div>
+        </div>
+        <div class="row">
+            <div class="col"><img src="img1.jpg"></div>
+            <div class="col"><img src="img2.jpg"></div>
+            <div class="col"><img src="img3.jpg"></div>
+        </div>
+        <div class="row">
+            <div class="col"><img src="img1.jpg"></div>
+            <div class="col"><img src="img2.jpg"></div>
+            <div class="col"><img src="img3.jpg"></div>
+        </div>
+    </div>
+    <!-- 9개의 이미지를 1행으로 출력 -->
+    <div id="table2">
+        <div class="row">
+            <div class="col"><img src="img1.jpg"></div>
+            <div class="col"><img src="img2.jpg"></div>
+            <div class="col"><img src="img3.jpg"></div>
+            <div class="col"><img src="img1.jpg"></div>
+            <div class="col"><img src="img2.jpg"></div>
+            <div class="col"><img src="img3.jpg"></div>
+            <div class="col"><img src="img1.jpg"></div>
+            <div class="col"><img src="img2.jpg"></div>
+            <div class="col"><img src="img3.jpg"></div>
+        </div>
+    </div>
+
+    <!-- div#test1>div.row*3>div.col*3>img -->
+</body>
+</html>
