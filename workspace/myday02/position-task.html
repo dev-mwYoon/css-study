@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position 실습</title>
+    <style>
+        div.img {
+            position: relative;
+            background-image: url("http://koreaitacademy.com/renewal2021/img/tch/teacher007.png");
+            background-size: 100%;
+            background-position: center;
+            width: 220px;
+            height: 315px;
+            margin: 0 auto;
+        }
+        .img div{
+            position: absolute;
+            z-index: 1;
+        }
+        #img1 {
+            position: absolute;
+            bottom: 171px;
+            right: 79px;
+            width: 115px;
+            height: 75px;
+            background-image: url('../image/sunglass.png');
+            background-size: 100%;
+            background-position: center;
+        }
+        #img2 {
+            bottom: 110px;
+            left: 11px;
+        }
+        /* .img div img{
+            size: 100%;
+        } */
+        #s1{
+            height: 75px;
+        }
+
+        #s2 {
+            height: 75px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="img"><!-- sunglass.png -->
+        <div id="img1"></div>
+        <div id="img2"><span><img id="s2" src="smoke.png"></span></div>
+    </div>
+</body>
+</html>
