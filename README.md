@@ -1,4 +1,4 @@
-# CSS_Study
+# CSS
 
 Visual Code 한글 설정
    좌측 하단 마켓 플레이스(확장) 아이콘 클릭 > korean 검색
